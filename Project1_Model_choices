@@ -1,0 +1,23 @@
+To make our model as practical as possible we have made some changes to the original data set.
+Firstly we cleaned up the data set and removed typos in the directors names. 
+
+We decided to remove several columns of the data that we cant use in the final recommendations as detailed below:
+
+Episode name is a complicated data type that has a unique value for every episode so we cant use this for our model. A more advanced model could use natrual language processing to incorporate this
+
+We droped release date because it isnt possible for the directors to release the episode in the past and the year of release isnt easy to control however we replaced this with air_season which was useful because episodes released in summer perform better.
+
+We droped number of votes on imbd rating because although this had a strong quadratic correlation with imdb rating the directors have no control of how many people vote on the episode. We did briefly consider using number of votes as a response variable instead of as a feature but found this didnt work very well. 
+
+We also droped Number of words to streamline the model because it was highly correlated to number of lines.
+
+We also dropped episode season because the special will have to be in its own season 10 so there is no point recomending a season for the special to be in.
+
+Claire Scanlon            
+Claire Scanlong
+
+Ken Whittingham  
+Ken Wittingham 
+
+Paul Lieberstein          
+Paul Lieerstein           
