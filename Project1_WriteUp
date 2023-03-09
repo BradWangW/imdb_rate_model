@@ -1,0 +1,10 @@
+Summary of why we chose certain models
+Our baseline model was linear regression which was not a very effective method because slthough it had
+an okay R sqaured of 0.16 it is too simple of a model to provide much insight
+
+We then tried Polynomial regression which initially fitted the model very well but this was only
+because of the quadratic relationship between imdb rating and total number of votes which as we discussed earleir we decided to remove. After this polynomial was not a very good fit for the data
+
+The model we settled on was ridge regression because it gave an acceptable R squared score of about 0.4 and was able to provide us with some useful insights to the data. This is probably performing better than the linear model because the ridge regressoin technique reduces overfitting. Add more about why this is a good model!!
+
+We also breifly tried polynomial ridge regression but this didnt improve much on linear ridge regression so we decided not to pursue this further.
